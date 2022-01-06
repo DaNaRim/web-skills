@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    I'm creating a link to
+    <a href="https://www.mozilla.org/en-US/">the Mozilla homepage</a>.
+</p>
+
+<p>
+    I'm creating a link to
+    <a href="https://www.mozilla.org/en-US/"
+       title="The best place to find more information about Mozilla's mission and how to contribute">
+        the Mozilla homepage
+    </a>.
+</p>
+
+<a href="https://www.mozilla.org/en-US/">
+    <img src="Firefox_logo,_2017.png" height="200" alt="mozilla logo that links to the mozilla homepage">
+</a>
+
+<h1>This is my sample homepage</h1>
+<p>Visit my <a href="projects/index.html">project homepage</a>.</p>
+<p>Want to contact a specific staff member? Find details on our <a href="contacts.html">contacts page</a>.</p>
+<p>Want to write us a letter? Use our <a href="contacts.html#Mailing_address">mailing address</a>.</p>
+
+
+<!--Screenreader users like jumping around from link to link on the page, and reading links out of context.-->
+<!--Search engines use link text to index target files, so it is a good idea to include keywords in your link text to
+    effectively describe what is being linked to.-->
+<!--Visual readers skim over the page rather than reading every word, and their eyes will be drawn to page features that
+    stand out, like links. They will find descriptive link text useful-->
+
+<p>
+    <a href="https://firefox.com/">Download Firefox</a>
+</p>
+
+<!--<p><a href="https://firefox.com/">-->
+<!--    Click here-->
+<!--</a>-->
+<!--    to download Firefox</p>-->
+
+<!--Don't repeat the URL as part of the link text — URLs look ugly, and sound even uglier when a screen reader reads
+    them out letter by letter.-->
+<!--Don't say "link" or "links to" in the link text — it's just noise. Screen readers tell people there's a link.
+    Visual users will also know there's a link, because links are generally styled in a different color and underlined
+    (this convention generally shouldn't be broken, as users are used to it).-->
+<!--Keep your link text as short as possible — this is helpful because screen readers need to interpret the entire link
+    text.-->
+<!--Minimize instances where multiple copies of the same text are linked to different places. This can cause problems
+    for screen reader users, if there's a list of links out of context that are labeled "click here", "click here",
+    "click here".-->
+
+<p><a href="https://www.example.com/large-report.pdf">
+    Download the sales report (PDF, 10MB)
+</a></p>
+
+<p><a href="https://www.example.com/video-stream/" target="_blank">
+    Watch the video (stream opens in separate tab, HD quality)
+</a></p>
+
+<p><a href="https://www.example.com/car-game">
+    Play the car game (requires Flash)
+</a></p>
+
+<a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+   download="firefox-latest-64bit-installer.exe">
+    Download Latest Firefox for Windows (64-bit) (English, US)
+</a>
+
+<p><a href="mailto:nowhere@mozilla.org">Send email to nowhere</a></p>
+
+<p>
+    <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+        Send mail with cc, bcc, subject and body
+    </a>
+</p>
+
+<!--mailto:-->
+<!--mailto:nowhere@mozilla.org-->
+<!--mailto:nowhere@mozilla.org,nobody@mozilla.org-->
+<!--mailto:nowhere@mozilla.org?cc=nobody@mozilla.org-->
+<!--mailto:nowhere@mozilla.org?cc=nobody@mozilla.org&subject=This%20is%20the%20subject-->
+</body>
+</html>
