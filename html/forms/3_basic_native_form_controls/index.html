@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="comment" name="comment" value="I'm a text field">
+    <input type="password" id="pwd" name="pwd">
+    <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+    <input type="checkbox" id="questionOne" name="subscribe" value="yes" checked>
+
+    <fieldset>
+        <legend>Choose all the vegetables you like to eat</legend>
+        <ul>
+            <li>
+                <label for="carrots">Carrots</label>
+                <input type="checkbox" id="carrots" name="vegetable" value="carrots" checked>
+            </li>
+            <li>
+                <label for="peas">Peas</label>
+                <input type="checkbox" id="peas" name="vegetable" value="peas">
+            </li>
+            <li>
+                <label for="cabbage">Cabbage</label>
+                <input type="checkbox" id="cabbage" name="vegetable" value="cabbage">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>What is your favorite meal?</legend>
+        <ul>
+            <li>
+                <label for="soup">Soup</label>
+                <input type="radio" id="soup" name="meal" value="soup" checked>
+            </li>
+            <li>
+                <label for="curry">Curry</label>
+                <input type="radio" id="curry" name="meal" value="curry">
+            </li>
+            <li>
+                <label for="pizza">Pizza</label>
+                <input type="radio" id="pizza" name="meal" value="pizza">
+            </li>
+        </ul>
+    </fieldset>
+    <p>
+        <button type="submit">
+            This is a <strong>submit button</strong>
+        </button>
+        <input type="submit" value="This is a submit button">
+    </p>
+    <p>
+        <button type="reset">
+            This is a <strong>reset button</strong>
+        </button>
+        <input type="reset" value="This is a reset button">
+    </p>
+    <p>
+        <button type="button">
+            This is an <strong>anonymous button</strong>
+        </button>
+        <input type="button" value="This is an anonymous button">
+    </p>
+    <p>
+        <input type="image" alt="Click me!" src="my-img.jpg" width="80" height="30">
+    </p>
+    <p>
+        <input type="file" name="file" id="file" accept="image/*" multiple>
+    </p>
+    <p>
+        <input type="file" accept="image/*;capture=camera">
+        <input type="file" accept="video/*;capture=camcorder">
+        <input type="file" accept="audio/*;capture=microphone">
+    </p>
+</form>
+</body>
+</html>
