@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <textarea cols="30" rows="8"></textarea>
+    </p>
+    <p>
+        <select id="simple" name="simple">
+            <option>Banana</option>
+            <option selected>Cherry</option>
+            <option>Lemon</option>
+        </select>
+        <select id="groups" name="groups">
+            <optgroup label="fruits">
+                <option>Banana</option>
+                <option selected>Cherry</option>
+                <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+                <option>Carrot</option>
+                <option>Eggplant</option>
+                <option>Potato</option>
+            </optgroup>
+        </select>
+        <select id="simple2" name="simple">
+            <option value="banana">Big, beautiful yellow banana</option>
+            <option value="cherry">Succulent, juicy cherry</option>
+            <option value="lemon">Sharp, powerful lemon</option>
+        </select>
+        <select id="multi" name="multi" multiple size="5">
+            <optgroup label="fruits">
+                <option>Banana</option>
+                <option selected>Cherry</option>
+                <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+                <option>Carrot</option>
+                <option>Eggplant</option>
+                <option>Potato</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="myFruit">What's your favorite fruit?</label>
+        <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+        <datalist id="mySuggestion">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Blueberry</option>
+            <option>Lemon</option>
+            <option>Lychee</option>
+            <option>Peach</option>
+            <option>Pear</option>
+        </datalist>
+    </p>
+    <p>
+
+        <label for="myFruit2">What is your favorite fruit? (With fallback)</label>
+        <input type="text" id="myFruit2" name="fruit" list="fruitList">
+
+        <datalist id="fruitList">
+            <label for="suggestion">or pick a fruit</label>
+            <select id="suggestion" name="altFruit">
+                <option>Apple</option>
+                <option>Banana</option>
+                <option>Blackberry</option>
+                <option>Blueberry</option>
+                <option>Lemon</option>
+                <option>Lychee</option>
+                <option>Peach</option>
+                <option>Pear</option>
+            </select>
+        </datalist>
+    </p>
+    <p>
+
+    </p>
+</form>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Other examples</title>
+</head>
+
+<body>
+<form>
+    <p>
+        <label for="file">Choose an image to upload</label>
+        <input type="file" name="file" id="file" accept="image/*" multiple>
+    </p>
+    <div>
+        <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+    </div>
+    <p>
+        <input type="image" name="pos" alt="map" src="map.png">
+    </p>
+    <p>
+        <progress max="100" value="75">75/100</progress>
+    </p>
+    <p>
+        <meter min="0" max="100" value="75" low="33" high="66" optimum="50">75</meter>
+    </p>
+</form>
+</body>
+
+</html>
+</body>
+</html>
