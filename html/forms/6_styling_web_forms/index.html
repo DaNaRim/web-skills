@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    button, input, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+
+        width: 150px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        position: relative;
+    }
+
+    legend {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+</style>
+</head>
+<body>
+<p>
+    <input type="text">
+</p>
+<p>
+    <input type="date">
+</p>
+<p>
+    <select>
+        <option value="AAA">AAA</option>
+    </select>
+</p>
+<p>
+    <textarea></textarea>
+</p>
+<p>
+    <input type="submit">
+</p>
+<p>
+    <button>AAA</button>
+</p>
+<p>
+    <input type="radio">
+</p>
+<p>
+    <input type="checkbox">
+</p>
+<p>
+    <input type="range">
+</p>
+<fieldset>
+    <legend>Choose all the vegetables you like to eat</legend>
+    <ul>
+        <li>
+            <label for="carrots">Carrots</label>
+            <input type="checkbox" checked="" id="carrots" name="carrots" value="carrots">
+        </li>
+        <li>
+            <label for="peas">Peas</label>
+            <input type="checkbox" id="peas" name="peas" value="peas">
+        </li>
+        <li>
+            <label for="cabbage">Cabbage</label>
+            <input type="checkbox" id="cabbage" name="cabbage" value="cabbage">
+        </li>
+        <li>
+            <label for="cauli">Cauliflower</label>
+            <input type="checkbox" id="cauli" name="cauli" value="cauli">
+        </li>
+        <li>
+            <label for="broc">Broccoli</label>
+            <input type="checkbox" id="broc" name="broc" value="broc">
+        </li>
+    </ul>
+</fieldset>
+</body>
+</html>
