@@ -1,0 +1,62 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    padding: 10px 30px 0;
+    width: 400px;
+}
+
+legend {
+    color: white;
+    background: black;
+    padding: 5px 10px;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+button, label, input {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+}
+
+input {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}
+
+input:hover, input:focus {
+    background-color: #eee;
+}
+
+button {
+    width: 60%;
+    margin: 0 auto;
+}

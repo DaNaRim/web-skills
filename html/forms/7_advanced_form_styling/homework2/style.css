@@ -1,0 +1,45 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0 0 0 10px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px black solid;
+    border-radius: 20%;
+}
+
+input[type="radio"]:checked {
+    background-color: red;
+    position: relative;
+}
+
+input[type="radio"]:checked:after {
+    content: "\2714";
+    position: absolute;
+    font-size: 1rem;
+    top: -3px;
+    right: 0.08em;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}

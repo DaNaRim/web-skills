@@ -1,0 +1,43 @@
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    /*margin: 0;*/
+
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    border: 5px red solid;
+
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+/*:focus:not::-webkit-search-cancel-button*/
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type="search"]:focus {
+    border: 5px #9f0000 solid;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
