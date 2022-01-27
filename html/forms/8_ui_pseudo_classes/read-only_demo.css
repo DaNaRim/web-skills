@@ -1,0 +1,72 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px auto;
+    max-width: 460px;
+}
+
+fieldset {
+    padding: 10px 30px 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: white;
+    background: black;
+    padding: 5px 10px;
+}
+
+fieldset > div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button, label, input[type="text"], textarea {
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 30px;
+}
+
+input[type="text"], textarea {
+    width: 50%
+}
+
+textarea {
+    height: 110px;
+    resize: none;
+}
+
+label {
+    width: 40%;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    background-color: #eee;
+}
+
+button {
+    width: 60%;
+    margin: 20px auto;
+}
+
+input:-moz-read-only,
+textarea:-moz-read-only,
+input:read-only,
+textarea:read-only {
+    border: 0;
+    box-shadow: none;
+    background-color: white;
+}
+
+textarea:-moz-read-write,
+textarea:read-write {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+}

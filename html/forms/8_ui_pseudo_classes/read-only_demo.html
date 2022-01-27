@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:read-only demo — confirmation form</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="read-only_demo.css">
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend contenteditable="true">Check shipping details</legend>
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" name="name" type="text" value="Mr Soft" readonly>
+        </div>
+        <div>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" readonly>
+23 Elastic Way,
+Viscous,
+Bright Ridge,
+CA
+            </textarea>
+        </div>
+        <div>
+            <label for="pcode">Zip/postal code: </label>
+            <input id="pcode" name="pcode" type="text" value="94708" readonly>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Final instructions</legend>
+        <div>
+            <label for="sms-confirm">Send confirmation by SMS?</label>
+            <input id="sms-confirm" name="sms-confirm" type="checkbox">
+        </div>
+        <div>
+            <label for="instructions">Any special instructions?</label>
+            <textarea id="instructions" name="instructions"></textarea>
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="button">Amend details</button>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

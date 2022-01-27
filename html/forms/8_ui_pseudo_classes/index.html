@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI pseudo-classes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Feedback form</legend>
+
+        <p>Required fields are labelled with "required".</p>
+        <div>
+            <label for="fname">First name: </label>
+            <input id="fname" name="fname" type="text" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="lname">Last name: </label>
+            <input id="lname" name="lname" type="text" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="age">Age (must be 12+): </label>
+            <input id="age" name="age" type="number" min="12" max="120" required>
+            <span></span>
+        </div>
+        <div>
+            <label for="email">Email address (include if you want a response): </label>
+            <input id="email" name="email" type="email">
+            <span></span>
+        </div>
+        <div><button>Submit</button></div>
+    </fieldset>
+</form>
+</body>
+</html>
