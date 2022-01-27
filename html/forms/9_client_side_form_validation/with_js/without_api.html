@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validating forms without a built-in API</title>
+    <link rel="stylesheet" href="without_api.css">
+    <script src="without_api.js"></script>
+</head>
+<body>
+<form>
+    <p>
+        <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="text" id="mail" name="mail">
+            <span class="error" aria-live="polite"></span>
+        </label>
+    </p>
+    <!-- Some legacy browsers need to have the `type` attribute
+         explicitly set to `submit` on the `button`element -->
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
