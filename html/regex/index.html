@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<form action="#">
+    <input type="text" required pattern="OK">
+
+    <input type="text" required pattern="^\w+\.pdf$">
+
+    <input type="text" required pattern="curious">
+
+    <input type="text" required pattern=".ok">
+
+    <!--bar ber bir bor bur-->
+    <input type="text" required pattern="b[aeiou]r">
+
+    <!--bar bir bur-->
+    <input type="text" required pattern="b[^eo]r">
+
+    <!--efghijklmno-->
+    <input type="text" required pattern="[e-o]">
+
+    <!--3456-->
+    <input type="text" required pattern="[3-6]">
+
+
+    <input type="text" required pattern="be*r">
+
+    <!--
+    To indicate that a character can occur one or more times, we put a plus sign + at the end.
+    For example, indicate that the letter e can occur one or more times in the text.
+    -->
+    <input type="text" required pattern="be+r">
+
+    <!--
+    To indicate that a character is optional, we put a ? question mark at the end.
+    For example, indicate that the following letter u is optional.
+    -->
+    <input type="text" required pattern="colou?r">
+
+    <!--
+    To express a certain number of occurrences of a character, we write curly braces {n} along with how many times we
+    want it to occur at the end. For example, indicate that the following letter e can occur only 2 times.
+    -->
+    <input type="text" required pattern="be{2}r">
+
+    <!--
+    To express at least a certain number of occurrences of a character, we write the end of the character at least how
+    many times we want it to occur, with a comma , at the end, and inside curly braces {n, }.
+    For example, indicate that the following letter e can occur at least 3 times.
+
+    beeer beeeer
+    -->
+    <input type="text" required pattern="be{3,}r">
+
+    <!--
+    To express the occurrence of a character in a certain number range, we write curly braces {x,y} with the interval
+    we want to go to the end.
+    For example, indicate that the following letter e can only occur between 1 and 3
+    -->
+    <input type="text" required pattern="be{1,3}r">
+
+    <!--
+    The words ha and haa are grouped below. The first group is used by writing \1 to avoid rewriting.
+    Here 1 denotes the order of grouping. Type \2 at the end of the expression to refer to the second group.
+
+    ha-ha,haa-haa
+    -->
+    <input type="text" required pattern="(ha)-\1,(haa)-\2">
+
+    <!--
+    You can group an expression and ensure that it is not captured by references. For example, below are two groups.
+    However, the first group reference we denote with \1 actually indicates the second group, as the first is a
+    non-capturing group.
+
+    ha-ha,haa-haa
+    -->
+    <input type="text" required pattern=(?:ha)-ha,(haa)-\1">
+
+    <!--
+    It allows to specify that an expression can be in different expressions.
+    Thus, all possible statements are written separated by the pipe sign |.
+    This differs from charset [abc], charsets operate at the character level. Alternatives are at the expression level.
+    For example, the following expression would select both cat and Cat.
+    Add another pipe sign | to the end of the expression and type rat so that all words are selected.
+
+    cat Cat rat
+    -->
+    <input type="text" required pattern="(C|c)at|rat">
+
+    <!--
+    There are special characters that we use when writing regex. { } [ ] / \ + * . $^ | ? Before we can select these
+    characters themselves, we need to use an escape character \. For example, to select the dot . and asterisk *
+    characters in the text, let's add an escape character \ before it.
+    -->
+    <input type="text" required pattern="(\*|\.)">
+
+    <!--
+    We were using [0-9] to find numbers.
+    To find only numbers at the beginning of a line, prefix this expression with the ^ sign.
+    -->
+    <input type="text" required pattern="^[0-9]">
+
+    <!--
+    Let's use the $ sign after the html value to find the html texts only at the end of the line.
+
+    https://domain.com/what-is-html.html
+    https://otherdomain.com/html-elements
+    https://website.com/html5-features.html
+    -->
+    <input type="text" required pattern="html$">
+
+    <!--
+    The expression \w is used to find letters, numbers and underscore characters.
+    Let's use the expression \w to find word characters in the text.
+
+    abcABC123 _.:!?
+    -->
+    <input type="text" required pattern="\w">
+
+    <!--
+    The expression \W is used to find characters other than letters, numbers, and underscores.
+    -->
+    <input type="text" required pattern="\W">
+
+    <!--\d is used to find only number characters.-->
+    <input type="text" required pattern="\d">
+
+    <!--\D is used to find non-numeric characters.-->
+    <input type="text" required pattern="\D">
+
+    <!--\s is used to find only space characters.-->
+    <input type="text" required pattern="\s">
+
+    <!--\S is used to find non-space characters.-->
+    <input type="text" required pattern="\S">
+
+    <!--
+    For example, we want to select the hour value in the text. Therefore, to select only the numerical values that have
+    PM after them, we need to write the positive look-ahead expression (?=) after our expression.
+    Include PM after the = sign inside the parentheses.
+
+    Date: 4 Aug 3PM
+    -->
+    <input type="text" required pattern="\d+(?=PM)">
+
+    <!--
+    For example, we want to select numbers other than the hour value in the text. Therefore, we need to write the
+    negative look-ahead (?!) expression after our expression to select only the numerical values that do not have PM
+    after them. Include PM after the ! sign inside the parentheses.
+    -->
+    <input type="text" required pattern="\d+(?!PM)">
+
+    <!--
+    For example, we want to select the price value in the text. Therefore, to select only the number values that
+    preceded by $, we need to write the positive lookbehind expression (?<=) before our expression.
+    Add \$ after the = sign inside the brackets.
+    -->
+    <input type="text" required pattern="(?<=\$)\d+">
+
+    <!--
+    For example, we want to select numbers in the text other than the price value. Therefore, to select only numeric
+    values that are not preceded by $, we need to write the negative lookbehind (?<!) before our expression.
+    Add \$ after the ! inside the brackets.
+    -->
+    <input type="text" required pattern="(?<!\$)\d+">
+
+    <!--
+    Regex does a greedy match by default. This means that the matchmaking will be as long as possible.
+    Check out the example below. It refers to any match that ends in r and can be any character preceded by it.
+    But it does not stop at the first letter r.
+
+    ber beer beeer beeeer
+    -->
+    <input type="text" required pattern=".*r">
+
+    <!--
+    Lazy matchmaking, unlike greedy matching, stops at the first matching.
+    For example, in the example below, add a ? after * to find the first match that ends with the letter r and is
+    preceded by any character. It means that this match will stop at the first letter r.
+    -->
+    <input type="text" required pattern=".*?r">
+    <br>
+    <button type="submit">Test</button>
+</form>
+</body>
+</html>
