@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation: Task 2</title>
+</head>
+<body>
+<form>
+    <h2>Enter your support query</h2>
+    <ul>
+        <li>
+            <label for="uname">User name:</label>
+            <input type="text" name="uname" id="uname" required pattern="^[a-z]\.[a-z1-9]{3,}$">
+        </li>
+        <li>
+            <label for="email">Email address:</label>
+            <input type="text" name="email" id="email" required pattern="^[a-zA-Z0-9]{1,}@bigcorp.eu$">
+        </li>
+        <li>
+            <label for="phone">Phone number:</label>
+            <input type="text" name="phone" id="phone" required
+                   pattern="^([0-9]{10})|([0-9]{3}[ -.][0-9]{3}[ -.][0-9]{4})$">
+        </li>
+        <li>
+            <label for="comment">Comment:</label>
+            <textarea name="comment" id="comment" required>
+          </textarea>
+        </li>
+        <li>
+            <button>Submit comment</button>
+        </li>
+    </ul>
+</form>
+</body>
+</html>
